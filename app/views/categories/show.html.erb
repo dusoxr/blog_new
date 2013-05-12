@@ -1,0 +1,7 @@
+<h1>Kategória <%= @category.name %></h1>
+
+<% if @posts.any? %>
+	<%= render @posts %>
+<% else %>
+	<p>V tejto kategorii sa nic nenachadza.</p>
+<% end %>
